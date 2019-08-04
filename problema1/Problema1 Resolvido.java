@@ -23,20 +23,20 @@ public class JavaApplication7 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter an integer: ");
         int n = input.nextInt();
-        System.out.println(n);
+        System.out.println(n); // output inútil, coloquei apenas pra ver se estava funcionando
         for(int x = 1; x<=n; x++)
         {
             a = (int) Math.pow(2, x);
             b = (2*x-1)*(2*x+1);
             c = a /((double)b);
-            System.out.println(c);
+            System.out.println(c); // esse também, só pra ver se funciona certinho
             d+=c;
                    
             
         }
         
         System.out.println("Resultado:");
-        System.out.println(d);
+        System.out.println(d); 
                 
         
         
