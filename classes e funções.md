@@ -1,14 +1,15 @@
-### DiferenÁas TerminolÛgicas
-No ˙ltimo exemplo, foram utilizados trÍs mÈtodos na mesma **classe** e, como foi utilizado o *main()* como o principal, sendo que iniciou a execuÁ„o e chamou ao conte˙do dos outros.
+### Diferen√ßas Terminol√≥gicas
+No √∫ltimo exemplo, foram utilizados tr√™s m√©todos na mesma **classe** e, como foi utilizado o *main()* como o principal, sendo que iniciou a execu√ß√£o e chamou ao conte√∫do dos outros.
 
 ## Procedimento 
-Que realiza  sua funÁ„o, mas n„o devolve nenhum conte˙do que o invocou, apenas realiza o seu cÛdigo, por exemplo, exibindo mensagens, fazendo c·lculos, salvando informaÁıes no Banco de Dados..
+Que realiza  sua fun√ß√£o, mas n√£o devolve nenhum conte√∫do que o invocou, apenas realiza o seu c√≥digo, por exemplo, exibindo mensagens, fazendo c√°lculos, salvando informa√ß√µes no Banco de Dados..
 
-## FunÁ„o
-Utiliza em outros pontos do programa e retorna um valor que ser· utilizado e alÈm, de executar todas as suas instruÁıes (procedimentos).
-Na O,O, n„o h· distinÁ„o de termos entre os mÈtodos que tem, e os que n„o tem retorno e, mas na assinatura dso mÈtodo, deve estar escrito expressamente **void** caso n„o haja nenhuma retorno, e , no caso de haver retorno, ent„o o tipo retorno deve estar no mesmo lugar.
-Nesse caso, uma var·vel ou um objeto È retornado e aproveitado adequadamente em java, quando escreve-se a palavra chave **return**, como no exemplo de uma pequena calculadora:
-
+## Fun√ß√£o
+Utiliza em outros pontos do programa e retorna um valor que ser√° utilizado e al√©m, de executar todas as suas instru√ß√µes (procedimentos).
+Na O,O, n√£o h√° distin√ß√£o de termos entre os m√©todos que tem, e os que n√£o tem retorno e, mas na assinatura dso m√©todo, deve estar escrito expressamente **void** caso n√£o haja nenhuma retorno, e , no caso de haver retorno, ent√£o o tipo retorno deve estar no mesmo lugar.
+Nesse caso, uma var√°vel ou um objeto √© retornado e aproveitado adequadamente em java, quando escreve-se a palavra chave **return**, como no exemplo de uma pequena calculadora:
+```java
+{
     Package exemplocalculadoraemmetodos;
     Public class Exemplocalculadoraemmetodos {
 	    Public static int somar (int numero), int numero2) {
@@ -22,7 +23,9 @@ Nesse caso, uma var·vel ou um objeto È retornado e aproveitado adequadamente em 
 	int numero1 = 10;
 	int numero2 = 5;
 	int ResultadoSoma = somar(numero1, numero2);
-	int resultadoSubtraÁ„o = subtrair (numero1, numero2);
+	int resultadoSubtra√ß√£o = subtrair (numero1, numero2);
 	System.out.println("soma:" + resultadoSoma);
-	System.out.println("subtraÁ„o:" + resultadoSubtraÁ„o):
+	System.out.println("subtra√ß√£o:" + resultadoSubtra√ß√£o):
 	}
+}
+```
