@@ -68,20 +68,33 @@ Permita que um usuário digite mês a mês o nome do funcionários responsável 
 
 ```
 VAR
-	INT: 
+	CARACTER: meses[0..11];
+	INTEIRO: i;
+INÍCIO
+	meses[0..11] <- "janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro";
+	i <- 0;
+	ENQUANTO i for menor que 12 FAÇA
+		ESCREVA meses[i];
+		ESCREVA "------";
+		i <- i + 1;
+	FIM_ENQUANTO
+FIM
+	
 ```
 
 ``` java
-Package meses
-Import ;
-Public static void main(String[] args){
-    String[] meses = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"}
+package meses;
+public class Meses {
+    public static void main(String[] args) {
+        String[] meses = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
     	int i = 0;
 		while(i<12){
         System.out.println(meses[i]);
         System.out.println("------");
         i++;
     }
+    }
+    
 }
 ```
 
@@ -89,14 +102,37 @@ Public static void main(String[] args){
 
 ```
 VAR
+	CARACTERE: meses[0..11], a;
+	INT: i;
+INICIO
+	meses[0..11] <- "janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro";
+	PARA ( seja i igual a 0; enquanto i for menor que 12; incremente i em 1)
+		ESCREVA "Qual funcionario do mes de " + meses[i] + "?";
+		LEIA A;
+		meses[i] <- i + a;
+	FIM_PARA
+	PARA (seja i igual a 0; enquanto i for menor que 12; incremente i em 1)
+		ESCREVA meses[i];
+	FIM_PARA
+FIM
 ```
 
 ```java
-Package nome funcionário
-Import ;
-Public static void main(String[] args){
-        String[][] tudo = new String [1][11];
-    	tudo[0][] = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"}
+package nomes;
+import javax.swing.JOptionPane;
+public class Nomes {
+    public static void main(String[] args) {
+        String[] meses = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
+        for(int i = 0;i<12; i++){
+        System.out.println("Qual funcionario do mes de " + meses[i] + "?");
+        String a = JOptionPane.showInputDialog("Qual o nome?");
+        meses[i] = i + a;
+        
+        
+    } for(int i =0; i<12; i++){
+        System.out.println(meses[i]);
+    }
+}
 }
 
 ```
